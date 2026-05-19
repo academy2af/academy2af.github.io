@@ -119,24 +119,27 @@ background:linear-gradient(to bottom,#111,#1b1b1b);
 overflow:hidden;
 }
 
+.pk-kit-images{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:8px;
+align-items:end;
+justify-items:center;
+padding:15px;
+height:240px;
+background:#111;
+overflow:hidden;
+}
+
 .pk-kit-img{
-height:150px;
+max-width:100%;
+max-height:160px;
+width:auto;
+height:auto;
 object-fit:contain;
-transition:.3s;
+display:block;
+transform:scale(.9);
 filter:drop-shadow(0 10px 15px rgba(0,0,0,.35));
-}
-
-.pk-kit-img.center{
-height:200px;
-transform:translateY(-8px);
-}
-
-.pk-card:hover .pk-kit-img{
-transform:scale(1.05);
-}
-
-.pk-card:hover .pk-kit-img.center{
-transform:translateY(-8px) scale(1.05);
 }</style>
 </head>
 <body>
@@ -219,9 +222,9 @@ transform:translateY(-8px) scale(1.05);
 <div class="pk-card" data-cat="digestif top">
   <div class="pk-top"></div>
   <div class="pk-kit-images">
-  <img src="images/gel.png" class="pk-kit-img left">
-  <img src="images/immublend.png" class="pk-kit-img center">
-  <img src="images/propolis.png" class="pk-kit-img right">
+  <img src="images/gel.png" class="pk-kit-img">
+  <img src="images/prob.png" class="pk-kit-img">
+  <img src="images/fog.png" class="pk-kit-img">
 </div>
   <div class="pk-body">
     <div class="pk-ref">Kit 02</div>
