@@ -108,7 +108,36 @@ section{padding:5rem 5%}
 .cstrip-c{text-align:center}
 .cstrip-c-l{font-size:.58rem;letter-spacing:2px;text-transform:uppercase;color:rgba(245,242,236,.3);display:block;margin-bottom:.3rem}
 .cstrip-c-v{color:var(--or);text-decoration:none;font-size:.82rem;font-weight:600}
-</style>
+.pk-kit-images{
+display:flex;
+justify-content:center;
+align-items:flex-end;
+gap:10px;
+padding:20px;
+height:260px;
+background:linear-gradient(to bottom,#111,#1b1b1b);
+overflow:hidden;
+}
+
+.pk-kit-img{
+height:150px;
+object-fit:contain;
+transition:.3s;
+filter:drop-shadow(0 10px 15px rgba(0,0,0,.35));
+}
+
+.pk-kit-img.center{
+height:200px;
+transform:translateY(-8px);
+}
+
+.pk-card:hover .pk-kit-img{
+transform:scale(1.05);
+}
+
+.pk-card:hover .pk-kit-img.center{
+transform:translateY(-8px) scale(1.05);
+}</style>
 </head>
 <body>
 <nav><div class="nav-inner">
