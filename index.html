@@ -110,7 +110,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(5,5,5,0.97);
 .pays-inner{max-width:1280px;margin:0 auto}
 .pays-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bord);margin-top:3rem}
 @media(max-width:900px){.pays-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:480px){.pays-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.pays-grid{grid-template-columns:1fr 1fr}}
 .pays-region{background:var(--noir3);padding:1.8rem}
 .pays-region-title{font-size:.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--or);margin-bottom:1rem;padding-bottom:.7rem;border-bottom:1px solid var(--bord)}
 .pays-list{list-style:none;display:flex;flex-direction:column;gap:.45rem}
@@ -136,7 +136,12 @@ footer{background:#020202;border-top:1px solid var(--bord);padding:3.5rem 5% 1.5
 .foot-inner{max-width:1280px;margin:0 auto}
 .foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem}
 @media(max-width:900px){.foot-top{grid-template-columns:1fr 1fr;gap:2rem}}
-@media(max-width:500px){.foot-top{grid-template-columns:1fr}}
+@media(max-width:500px){
+.foot-top{
+grid-template-columns:1fr 1fr;
+gap:1.5rem;
+}
+}
 .foot-brand{display:flex;flex-direction:column;gap:1rem}
 .foot-logo{display:flex;align-items:center;gap:10px}
 .foot-logo img{height:44px;width:44px;object-fit:contain}
@@ -193,14 +198,14 @@ display:block;
   <div class="hero-cnt fi">
     <div class="hero-eyebrow"><span>✦</span> Première Académie MLM Structurée d'Afrique Francophone <span>✦</span></div>
     <h1>Former des <em>leaders.</em><br>Élever <em>l'Afrique.</em></h1>
-    <p class="hero-sub">Academy 2AF — un parcours structuré sur +6 ans, 624+24 modules vidéo quotidiens, une communauté d'élite dans +20 pays.</p>
+    <p class="hero-sub">Academy 2AF — un parcours structuré sur +6 ans, +624 modules vidéo quotidiens, une communauté d'élite dans +20 pays.</p>
     <p class="hero-founded">Fondation africaine pour partenaires Forever Living Products du système 2AF</p>
     <div class="hero-btns">
       <a href="academie.html" class="btn-gold">Rejoindre l'Academy</a>
       <a href="catalogue.html" class="btn-ghost">Voir les produits</a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><span class="stat-n">624+24</span><span class="stat-l">Modules</span></div>
+      <div class="stat"><span class="stat-n">+624</span><span class="stat-l">Modules</span></div>
       <div class="stat"><span class="stat-n">+6</span><span class="stat-l">Ans</span></div>
       <div class="stat"><span class="stat-n">+9</span><span class="stat-l">Grades</span></div>
       <div class="stat"><span class="stat-n">+20</span><span class="stat-l">Pays</span></div>
@@ -289,12 +294,6 @@ display:block;
       <h2 class="s-title">Pas un système aléatoire.<br>mais une institution.</h2>
       <div class="gold-line"></div>
       <p class="s-lead">L'Academy 2AF est la première institution académique MLM structurée d'Afrique Francophone. Chaque étudiant est sélectionné, accompagné quotidiennement et propulsé vers l'excellence.</p>
-      <div class="why-grid">
-        <div class="why-item"><div class="why-item-t">🎓 Institution</div><div class="why-item-d">Administration, promotions, calendrier académique et progression rigoureusement encadrée.</div></div>
-        <div class="why-item"><div class="why-item-t">📅 Formation quotidienne</div><div class="why-item-d">624+24 modules vidéo, un par jour pendant 2 ans, structurés et progressifs.</div></div>
-        <div class="why-item"><div class="why-item-t">🌍 Portée continentale</div><div class="why-item-d">+20 pays couverts à travers toute l'Afrique Francophone et au-delà.</div></div>
-        <div class="why-item"><div class="why-item-t">🔐 Sélection rigoureuse</div><div class="why-item-d">L'Academy sélectionne les profils sérieux via un processus en 4 actes exigeants.</div></div>
-      </div>
       <div style="margin-top:2rem"><a href="academie.html" class="btn-gold">Découvrir l'Académie →</a></div>
     </div>
     <div class="why-visual fi d2">
@@ -369,23 +368,41 @@ display:block;
         </div>
         <p class="foot-tagline">"Former des leaders, élever l'Afrique Francophone."<br>Partenaire Forever Living Products.</p>
       </div>
-      <div class="foot-col"><h4>Espaces</h4><ul>
-        <li><a href="academie.html">L'Académie</a></li>
-        <li><a href="catalogue.html">Le Catalogue</a></li>
-        <li><a href="librairie.html">La Librairie</a></li>
-      </ul></div>
-      <div class="foot-col"><h4>Académie</h4><ul>
-        <li><a href="academie.html#programme">Programme</a></li>
-        <li><a href="academie.html#grades">Grades</a></li>
-        <li><a href="academie.html#investissement">Investissement</a></li>
-        <li><a href="academie.html#contact"></a></li>
-      </ul></div>
-      <div class="foot-col"><h4>Contact</h4><ul>
-        <li><a href="https://wa.me/22891442251">WhatsApp 1</a></li>
-        <li><a href="https://wa.me/22675587795">WhatsApp 2</a></li>
-        <li><a href="mailto:academy2af@gmail.com">academy2af@gmail.com</a></li>
-        <div class="foot-col"><h4>Réseaux</h4><ul><li><a href="https://facebook.com/academy2af">Facebook</a></li><li><a href="https://tiktok.com/@academy2af">TikTok</a></li><li><a href="https://instagram.com/academy2af">Instagram</a></li></ul></div>
-    </div>
+      <div class="foot-col">
+  <h4>Espaces</h4>
+  <ul>
+    <li><a href="academie.html">L'Académie</a></li>
+    <li><a href="catalogue.html">Le Catalogue</a></li>
+    <li><a href="librairie.html">La Librairie</a></li>
+  </ul>
+</div>
+
+<div class="foot-col">
+  <h4>Académie</h4>
+  <ul>
+    <li><a href="academie.html#programme">Programme</a></li>
+    <li><a href="academie.html#grades">Grades</a></li>
+    <li><a href="academie.html#investissement">Investissement</a></li>
+  </ul>
+</div>
+
+<div class="foot-col">
+  <h4>Contact</h4>
+  <ul>
+    <li><a href="https://wa.me/22891442251">WhatsApp 1</a></li>
+    <li><a href="https://wa.me/22675587795">WhatsApp 2</a></li>
+    <li><a href="mailto:academy2af@gmail.com">academy2af@gmail.com</a></li>
+  </ul>
+</div>
+
+<div class="foot-col">
+  <h4>Réseaux</h4>
+  <ul>
+    <li><a href="https://facebook.com/academy2af">Facebook</a></li>
+    <li><a href="https://tiktok.com/@academy2af">TikTok</a></li>
+    <li><a href="https://instagram.com/academy2af">Instagram</a></li>
+  </ul>
+</div>
       </ul></div>
     </div>
     <div class="foot-bottom">
